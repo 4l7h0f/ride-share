@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('make');
             $table->string('model');
             $table->string('color');
-            $table->string('lisence_plate');
+            $table->string('license_plate');
             $table->timestamps();
         });
     }
