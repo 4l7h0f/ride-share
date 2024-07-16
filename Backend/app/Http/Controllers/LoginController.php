@@ -17,7 +17,7 @@ class LoginController extends Controller
 
         // find or create the user model
         $user = User::firstOrCreate([
-            'phone' => $request->phone,
+            'phone' => '+' . $request->phone,
         ]);
 
         if(!$user){
@@ -44,7 +44,7 @@ class LoginController extends Controller
         ]);
 
         // find the user
-        $user = User::where('phone', $request->phone)
+        $user = User::where('phone', '+' . $request->phone)
             ->where('login_code', $request->login_code)
             ->first();
 
