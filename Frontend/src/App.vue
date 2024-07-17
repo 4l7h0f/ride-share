@@ -4,6 +4,8 @@ import { RouterView } from 'vue-router'
 
 <template>
   <div class="min-h-screen bg-grey-100 text-center antialiased">
-    <RouterView />
+    <main id="content" role="main" class="w-full  max-w-md mx-auto p-6">
+      <RouterView />
+    </main>
   </div>
 </template>
